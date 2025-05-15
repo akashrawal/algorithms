@@ -1,5 +1,8 @@
 
-objects := build/iteration_1
+objects := build/iteration_1 \
+		   build/insert_beginning \
+		   build/insert_end \
+		   build/insert_middle
 
 ALL: $(objects)
 
