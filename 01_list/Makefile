@@ -4,7 +4,8 @@ objects := build/iteration_1 \
 		   build/insert_end \
 		   build/insert_middle \
 		   build/delete \
-		   build/delete_fast
+		   build/delete_fast \
+		   build/binary_search 
 
 ALL: $(objects)
 
@@ -13,6 +14,9 @@ build:
 
 build/%: %.c build
 	gcc -Wall -o $@ $<
+
+run_%: build/%
+	./$<
 
 .PHONY: clean
 clean:
