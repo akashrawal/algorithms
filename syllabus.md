@@ -12,7 +12,12 @@
     - Delete fast
   - Delete current element while iteration
   - Resize/dynamic memory allocation
-  - Ordered lists
+- Ordered lists
+    - Binary search
+    - Selection sort
+    - Bubble sort
+    - Insertion sort
+    - Merging sorted lists
 - Singly linked lists
   - CRUD
     - Append
@@ -21,6 +26,7 @@
     - Delete
   - Iteration
     - Delete current element while iteration
+- Stacks and queues
 - Doubly linked lists
   - CRUD
     - Append
@@ -47,16 +53,24 @@
 - Big-O
 - Big-Omega
 
-# Sorted lists
-- Binary search
-- Selection sort
-- Bubble sort
-- Insertion sort
 
 # Divide and conquer
 - Concept
 - Time complexity calculation
 - Merge sort
-- 
+- Karatsuba's algorithm
 
 # Dynamic programming
+- Concept
+- Maximum subarray
+
+# Priority queues
+- Concept
+- Binary heap
+- Fibonacci heap
+
+# Hash tables
+
+# T:ree algorithms
+- Binary tree basics
+- Binary search tree

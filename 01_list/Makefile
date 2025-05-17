@@ -2,7 +2,9 @@
 objects := build/iteration_1 \
 		   build/insert_beginning \
 		   build/insert_end \
-		   build/insert_middle
+		   build/insert_middle \
+		   build/delete \
+		   build/delete_fast
 
 ALL: $(objects)
 
