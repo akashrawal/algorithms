@@ -31,4 +31,17 @@ int compare(const char* a, const char* b) {
     - Pick a center element `c = (l - r) / 2`
     - Compare `arr[c]` with the element
     - Accordingly adjust `l` and `r` of the range
+  - Result
+    - Found: 'arr[c] == needle`
+    - Not found:
+      - `l == r`
+      - `arr[l - 1] < needle < arr[l]`
+      - `arr[r - 1] < needle < arr[r]`
 
+## Selection sort
+- In each iteration
+  - Find smallest element from `input` array
+  - Fast-delete the element from `input` array
+  - Append the element to `output` array
+- `input` and `output` may be partitions of the same array,
+  so no second array is needed.

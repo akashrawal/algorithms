@@ -71,6 +71,9 @@
 
 # Hash tables
 
-# T:ree algorithms
+# Tree algorithms
 - Binary tree basics
 - Binary search tree
+
+# Randomized algorithms
+- Quicksort and quickselect

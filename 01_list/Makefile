@@ -5,7 +5,8 @@ objects := build/iteration_1 \
 		   build/insert_middle \
 		   build/delete \
 		   build/delete_fast \
-		   build/binary_search 
+		   build/binary_search \
+		   build/selection_sort
 
 ALL: $(objects)
 
