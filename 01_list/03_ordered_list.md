@@ -43,5 +43,41 @@ int compare(const char* a, const char* b) {
   - Find smallest element from `input` array
   - Fast-delete the element from `input` array
   - Append the element to `output` array
+  - Repeat till `input` array is empty
 - `input` and `output` may be partitions of the same array,
-  so no second array is needed.
+  for in-place sorting.
+
+```
+Input:
+7   5   3   29   23   2   19   17   13   11   
+Iteration 0
+2  |  5  3  29  23  7  19  17  13  11  
+Iteration 1
+2  3  |  5  29  23  7  19  17  13  11  
+Iteration 2
+2  3  5  |  29  23  7  19  17  13  11  
+Iteration 3
+2  3  5  7  |  23  29  19  17  13  11  
+Iteration 4
+2  3  5  7  11  |  29  19  17  13  23  
+Iteration 5
+2  3  5  7  11  13  |  19  17  29  23  
+Iteration 6
+2  3  5  7  11  13  17  |  19  29  23  
+Iteration 7
+2  3  5  7  11  13  17  19  |  29  23  
+Iteration 8
+2  3  5  7  11  13  17  19  23  |  29  
+Iteration 9
+2  3  5  7  11  13  17  19  23  29  |  
+```
+
+## Insertion sort
+- In each iteration
+  - Delete any element from `input` array. Usually this is the first or last
+    element, as this can be done quickly.
+  - Insert the element in the correct location in the `output` array.
+  - Repeat till input array is empty
+- `input` and `output` may be partitions of the same array,
+  for in-place sorting.
+
