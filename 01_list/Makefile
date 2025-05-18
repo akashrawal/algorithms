@@ -9,7 +9,8 @@ objects := build/iteration_1 \
 		   build/binary_search \
 		   build/selection_sort \
 		   build/insertion_sort \
-		   build/bubble_sort 
+		   build/bubble_sort \
+		   build/merging
 
 ALL: $(objects)
 

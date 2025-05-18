@@ -10,7 +10,6 @@
     - Insert fast
     - Delete
     - Delete fast
-  - Delete current element while iteration
   - Resize/dynamic memory allocation
 - Ordered lists
     - Binary search

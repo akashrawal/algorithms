@@ -137,3 +137,12 @@ Iteration 8
 Iteration 9
 |  2  3  5  7  11  13  17  19  23  29  
 ```
+
+## Merging sorted arrays
+- Run a loop while there are elements in `arr1` and `arr2`.
+  In each iteration:
+  - Compare first elements from `arr1` and `arr2`.
+  - Remove the smaller element and append it to `result` array.
+- Append the remaining elements in `arr1` or `arr2` to the result array.
+- Merging sorted arrays is faster than concatenating and sorting them.
+
