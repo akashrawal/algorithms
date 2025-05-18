@@ -9,14 +9,6 @@ void print_arr(int* arr, int len) {
 	printf("\n");
 }
 
-void compare_and_swap(int* a, int* b) {
-	if (*a > *b) {
-		int tmp = *a;
-		*a = *b;
-		*b = tmp;
-	}
-}
-
 int main() {
 	int arr[] = { 7, 5, 3, 29, 23, 2, 19, 17, 13, 11 };
 	int len = sizeof(arr) / sizeof(arr[0]);
@@ -27,7 +19,12 @@ int main() {
 	int i, j;
 	for (i = 0; i < len; i++) {
 		for (j = 0; j < (len - (i + 1)); j++) {
-			compare_and_swap(arr + j, arr + j + 1);
+			//Compare and swap operation
+			if (arr[j] > arr[j + 1]) {
+				int tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
 		}
 
 		printf("Iteration %d\n", i);
