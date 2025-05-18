@@ -16,24 +16,11 @@ int main() {
 	printf("Before insertion:\n");
 	print_arr(arr, len);
 
-
-	printf("Insert at beginning:\n");
+	int x = 2;
+	printf("Insert at %d:\n", x);
 	len = len + 1;
-	int i;
-	for (i = len - 1; i > 0; i--) {
-		arr[i] = arr[i - 1];
-	}
-	/*
-	int temp;
-	for (i = 0; i < (len - 1); i++) {
-		int temp2 = arr[i];
-		arr[i] = temp;
-		temp = temp2;
-	}
-	arr[len - 1] = temp;
-	*/
-
-	arr[0] = 4;
+	arr[len - 1] = arr[x];
+	arr[x] = 4;
 
 	print_arr(arr, len);
 
