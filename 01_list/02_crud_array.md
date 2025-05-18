@@ -128,3 +128,22 @@
                                                             New length
 ```
 
+## Dynamically allocated arrays
+- Allocation
+  - Dynamically allocated arrays are allocated on heap. Size is not known at
+    compile time.
+  - Array is re-allocated if there is no space present in the array, 
+    or the array is very large for the elements it stores.
+- Metadata
+  - `array`: Points to memory allocated for the array
+  - `len`: Number of elements actually stored in the array
+  - `alloc_len`: Total space allocated in the array (`>= len`)
+- Resize
+  - Steps done
+    - Calculate the space needed for the size
+    - Allocate memory
+    - Copy elements from existing memory to new memory
+    - Free the existing memory
+  - If the array is too small, usually the length is doubled.
+    - This is done to prevent frequent re-allocations when elements are added.
+

@@ -5,6 +5,7 @@ objects := build/iteration_1 \
 		   build/insert_middle \
 		   build/delete \
 		   build/delete_fast \
+		   build/dynamic_array \
 		   build/binary_search \
 		   build/selection_sort \
 		   build/insertion_sort \
