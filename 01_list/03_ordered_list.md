@@ -81,3 +81,59 @@ Iteration 9
 - `input` and `output` may be partitions of the same array,
   for in-place sorting.
 
+```
+Input:
+7   5   3   29   23   2   19   17   13   11   
+Iteration 0
+7  |  5  3  29  23  2  19  17  13  11  
+Iteration 1
+5  7  |  3  29  23  2  19  17  13  11  
+Iteration 2
+3  5  7  |  29  23  2  19  17  13  11  
+Iteration 3
+3  5  7  29  |  23  2  19  17  13  11  
+Iteration 4
+3  5  7  23  29  |  2  19  17  13  11  
+Iteration 5
+2  3  5  7  23  29  |  19  17  13  11  
+Iteration 6
+2  3  5  7  19  23  29  |  17  13  11  
+Iteration 7
+2  3  5  7  17  19  23  29  |  13  11  
+Iteration 8
+2  3  5  7  13  17  19  23  29  |  11  
+Iteration 9
+2  3  5  7  11  13  17  19  23  29  |  
+```
+
+## Bubble sort
+- Basic operation: compare-and-swap
+- In each iteration, sink the largest element to the bottom 
+  using compare-and-swap.
+  (or the smallest element to the top)
+- It is the simplest, but usually also the slowest.
+
+```
+Input:
+7   5   3   29   23   2   19   17   13   11   
+Iteration 0
+5  3  7  23  2  19  17  13  11  |  29  
+Iteration 1
+3  5  7  2  19  17  13  11  |  23  29  
+Iteration 2
+3  5  2  7  17  13  11  |  19  23  29  
+Iteration 3
+3  2  5  7  13  11  |  17  19  23  29  
+Iteration 4
+2  3  5  7  11  |  13  17  19  23  29  
+Iteration 5
+2  3  5  7  |  11  13  17  19  23  29  
+Iteration 6
+2  3  5  |  7  11  13  17  19  23  29  
+Iteration 7
+2  3  |  5  7  11  13  17  19  23  29  
+Iteration 8
+2  |  3  5  7  11  13  17  19  23  29  
+Iteration 9
+|  2  3  5  7  11  13  17  19  23  29  
+```
