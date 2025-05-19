@@ -11,7 +11,9 @@ objects := build/iteration_1 \
 		   build/selection_sort \
 		   build/insertion_sort \
 		   build/bubble_sort \
-		   build/merging
+		   build/merging \
+		   build/slist_prepend \
+		   build/slist_append
 
 ALL: $(objects)
 
